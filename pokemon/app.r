@@ -126,15 +126,15 @@ server <- function(input, output, session) {
   
   updateSelectizeInput(session,
                        'gen',
-                       choices = c('Any', unique(pokemon$generation)),
+                       choices = c('Any', unique(base$generation)),
                        server = TRUE)
   updateSelectizeInput(session,
                        'type1',
-                       choices = c("Any", levels(unique(pokemon$type1))),
+                       choices = c("Any", levels(unique(base$type1))),
                        server = TRUE)
   updateSelectizeInput(session,
                        'type2',
-                       choices = c("Any", levels(unique(pokemon$type2))),
+                       choices = c("Any", levels(unique(base$type2))),
                        server = TRUE)
   
   # Fragmento reactivo, carga y filtra el dataset de acuerdo a las modificaciones de los filtros de la barra lateral:
