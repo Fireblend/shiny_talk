@@ -18,11 +18,16 @@ base <-
       "classfication",
       "experience_growth",
       "percentage_male",
-      "height_m",
       "japanese_name",
       "pokedex_number"
     )
   )
+
+max_w = max(base$weight_kg, na.rm=TRUE)
+min_w = min(base$weight_kg, na.rm=TRUE)
+
+max_h = max(base$height_m, na.rm=TRUE)
+min_h = min(base$height_m, na.rm=TRUE)
 
 # Elemento de UI
 ui <- fluidPage(
@@ -48,6 +53,14 @@ ui <- fluidPage(
       selectizeInput("type2", "Secondary Type", choices = NULL, selected = NULL
       ),
       
+      # Sliders de peso y altura
+      
+      sliderInput("weight", label = "Weight (kg)", min = min_w, 
+                  max = max_w, value = c(min_w, max_w) ),
+      
+      sliderInput("height", label = "Height (m)", min = min_h, 
+                  max = max_h, value = c(min_h, max_h) ),
+      
       radioButtons(
         "legendary",
         label = "Legendary Status",
@@ -57,7 +70,8 @@ ui <- fluidPage(
           "Any" = 3
         ),
         selected = 3
-      ),
+      )
+      
     ),
     
     # Panel principal
@@ -156,6 +170,11 @@ server <- function(input, output, session) {
     if (input$legendary == 2) {
       data <- data[data$is_legendary == 0, ]
     }
+    
+    data <- na.omit(data[data$weight_kg >= input$weight[1] & data$weight_kg <= input$weight[2], ])
+    
+    data <- na.omit(data[data$height_m >= input$height[1] & data$height_m <= input$height[2], ])
+    
     data
   })
   
