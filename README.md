@@ -11,6 +11,6 @@ Puede acceder a versiones en vivo de estos ejemplos en las siguientes direccione
 - [Ejemplo Pokemon](https://fireblend.shinyapps.io/pokemon/)
 - [Ejemplo Pokemon (con código)](https://fireblend.shinyapps.io/pokemon-showcase/)
 
-Puede descargar la presentación asociada desde www.fireblend.com/shiny_talk.pdf
+Puede descargar la presentación asociada desde [este enlace](www.fireblend.com/shiny_talk.pdf).
 
 Para más información, visite www.fireblend.com
