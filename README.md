@@ -8,8 +8,8 @@ Puede acceder a versiones en vivo de estos ejemplos en las siguientes direccione
 
 - [Ejemplo Básico](https://fireblend.shinyapps.io/Ejemplo2-normal/)
 - [Ejemplo Básico (con código)](https://fireblend.shinyapps.io/Ejemplo2/)
-- [Ejemplo Pokemon](https://fireblend.shinyapps.io/pokemon/)
-- [Ejemplo Pokemon (con código)](https://fireblend.shinyapps.io/pokemon-showcase/)
+- [Ejemplo Pokémon](https://fireblend.shinyapps.io/pokemon/)
+- [Ejemplo Pokémon (con código)](https://fireblend.shinyapps.io/pokemon-showcase/)
 
 Puede descargar la presentación asociada desde [este enlace](www.fireblend.com/shiny_talk.pdf).
 
