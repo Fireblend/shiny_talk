@@ -87,7 +87,12 @@ ui <- fluidPage(
         # Elemento de Datatable para mostrar
         # selección basada en el filtro
         
-        DT::dataTableOutput("table")
+        DT::dataTableOutput("table"),
+        br(),
+        
+        # Botón para descarga
+        downloadButton('downloadData', 'Download Filtered Data')
+        
       ),
       tabPanel(
         "Type Distributions",
@@ -184,6 +189,17 @@ server <- function(input, output, session) {
   output$table <- DT::renderDataTable(DT::datatable({
     pokemon()
   }))
+  
+  # Manejador de descargas
+  
+  output$downloadData <- downloadHandler(
+    filename = function() {
+      paste('pokemon-', Sys.Date(), '.csv', sep='')
+    },
+    content = function(con) {
+      write.csv(pokemon(), con)
+    }
+  )
   
   # Gráfico de barras:
   
