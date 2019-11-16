@@ -6,10 +6,8 @@ Este repositorio contiene los ejemplos utilizados en la charla "Building Interac
 
 Puede acceder a versiones en vivo de estos ejemplos en las siguientes direcciones:
 
-- [Ejemplo Básico](https://fireblend.shinyapps.io/Ejemplo2-normal/)
 - [Ejemplo Básico (con código)](https://fireblend.shinyapps.io/Ejemplo2/)
 - [Ejemplo Pokémon](https://fireblend.shinyapps.io/pokemon/)
-- [Ejemplo Pokémon (con código)](https://fireblend.shinyapps.io/pokemon-showcase/)
 
 Puede descargar la presentación asociada desde [este enlace](www.fireblend.com/shiny_talk.pdf).
 
