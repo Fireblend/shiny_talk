@@ -2,7 +2,7 @@
 ### Sergio Morales
 ### Analytics Takeover 2019
 
-Este repositorio contiene los ejemplos utilizados en la charla "Building Interactive Dashboards with Shiny", parte del evento Analytics Takeover llevado a cabo en el mes de Noviembre del 2019, en colaboración con los CoE de Education y Analytics de GAP.
+Este repositorio contiene los ejemplos utilizados en la charla "_Building Interactive Dashboards with Shiny_", parte del evento _Analytics Takeover_ llevado a cabo en el mes de Noviembre del 2019, en colaboración con los CoE de Education y Analytics de GAP.
 
 Para ejecutar los ejemplos, puede descargar este repositorio y correrlos manualmente desde RStudio, o ejecutarlos de manera remota usando la función runGithub del paquete Shiny:
 
